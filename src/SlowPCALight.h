@@ -35,6 +35,11 @@ public:
     //pinMode(lightPin, OUTPUT);
   }
 
+  virtual void begin() override
+  {
+    pinMode(lightPin, OUTPUT);
+  }
+
   void set(bool lightOn)
   {
     if (this->lightOn == lightOn)
