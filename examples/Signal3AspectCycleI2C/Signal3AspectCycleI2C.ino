@@ -29,7 +29,7 @@ int yellowPin = 2;
 
 void setup()
 {
-  Serial.begin(9600);
+  Serial.begin(115200);
   Serial.println("Signal 3 Aspect using I2C and PCA9685");
 
   pwm.begin();
